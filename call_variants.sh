@@ -67,7 +67,7 @@ ckFileSz() {
 }
 
 # Load Parameters from config File
-ckFile "rnaseq_pipeline_config.sh" "Config File";
+ckFile $PARAMS "Config File";
 source $PARAMS
 
 ckFileSz $reference "Reference Fasta";
